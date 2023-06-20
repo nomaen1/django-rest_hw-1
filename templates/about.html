@@ -1,0 +1,822 @@
+{% extends 'include/homepage.html'%}
+{% load static %}
+{% block content %}
+
+{%include 'include/header.html'%}
+
+    <div class="preloader js-preloader">
+        <div class="loader loader-inner-1">
+            <div class="loader loader-inner-2">
+                <div class="loader loader-inner-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+
+    <div class="page-wrapper">
+
+        <header class="header-wrap style1">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <div class="header-top-left">
+                                <ul class="contact-info list-style">
+                                    <li>
+                                        <i class="ri-phone-fill"></i>
+                                        <a href="tel:2455921125">(+245) 592 1125</a>
+                                    </li>
+                                    <li>
+                                        <i class="ri-mail-open-line"></i>
+                                        <a href="/cdn-cgi/l/email-protection#761e131a1a19361503130e5815191b"><span
+                                                class="__cf_email__"
+                                                data-cfemail="6c04090000032c0f190914420f0301">[email&#160;protected]</span></a>
+                                    </li>
+                                    <li>
+                                        <i class="ri-map-pin-fill"></i>
+                                        <p>2767 Sunrise Street, NY 1002, USA</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="header-top-right">
+                                <ul class="user-menu list-style">
+                                    <li>
+                                        <a href="contact.html">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Help</a>
+                                    </li>
+                                </ul>
+                                <div class="select-lang">
+                                    <i class="ri-earth-fill"></i>
+                                    <div class="navbar-option-item navbar-language dropdown language-option">
+                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <span class="lang-name"></span>
+                                        </button>
+                                        <div class="dropdown-menu language-dropdown-menu">
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'assets/img/uk.png'%}" alt="flag">
+                                                English
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'assets/img/china.png'%}" alt="flag">
+                                                简体中文
+                                            </a>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="{% static 'assets/img/uae.png'%}" alt="flag">
+                                                العربيّة
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo-light" src="{% static 'assets/img/logo.png'%}" alt="logo">
+                            <img class="logo-dark" src="{% static 'assets/img/logo-white.png'%}" alt="logo">
+                        </a>
+                        <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+                            <div class="menu-close d-lg-none">
+                                <a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+                            </div>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Home
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="index.html" class="nav-link">Home One</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="index-2.html" class="nav-link">Home Two</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="index-3.html" class="nav-link">Home Three</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link active">
+                                        About
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="about.html" class="nav-link active">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="features.html" class="nav-link">Our Features</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Converter
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="converter.html" class="nav-link">Convert Currency</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="chart.html" class="nav-link">Currency Chart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="send-money.html" class="nav-link">Send Money</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="alerts.html" class="nav-link">Exchange Rate Alert</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Pages
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="team.html" class="nav-link">Our Team</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="app.html" class="nav-link">Download App</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="faq.html" class="nav-link">FAQ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="testimonials.html" class="nav-link">Testimonials</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                User Pages
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="login.html" class="nav-link">Login</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="register.html" class="nav-link">Register</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="recover-password.html" class="nav-link">Recover
+                                                        Password</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="terms-of-service.html" class="nav-link">Terms of Service</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="error-404.html" class="nav-link">404 Error Page</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        Blog
+                                        <i class="ri-arrow-down-s-line"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                Blog Layout
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="blog-no-sidebar.html" class="nav-link">Blog Grid</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="blog-left-sidebar.html" class="nav-link">Blog Left
+                                                        Sidebar</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="blog-right-sidebar.html" class="nav-link">Blog Right
+                                                        Sidebar</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                Single Blog
+                                                <i class="ri-arrow-right-s-line"></i>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item">
+                                                    <a href="blog-details-no-sidebar.html" class="nav-link">Blog Details
+                                                        No Sidebar</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="blog-details-left-sidebar.html" class="nav-link">Blog
+                                                        Details Left Sidebar</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="blog-details-right-sidebar.html" class="nav-link">Blog
+                                                        Details Right Sidebar</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link">Contact Us</a>
+                                </li>
+                                <li class="nav-item d-lg-none">
+                                    <a href="app.html" class="nav-link btn style1">GET THE APP<i
+                                            class="ri-arrow-right-s-line"></i></a>
+                                </li>
+                            </ul>
+                            <div class="other-options md-none">
+                                <div class="option-item">
+                                    <div class="user-login">
+                                        <span><i class="ri-user-add-line"></i></span>
+                                        <ul class="list-style">
+                                            <li><a href="login.html">Sign In</a></li>
+                                            <li><a href="register.html">Sign Up</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="option-item">
+                                    <a href="app.html" class="btn style1">GET THE APP<i
+                                            class="ri-arrow-right-s-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="mobile-bar-wrap">
+                        <div class="user-login d-lg-none">
+                            <span><i class="ri-user-add-line"></i></span>
+                            <ul class="list-style">
+                                <li><a href="login.html">Sign In</a></li>
+                                <li><a href="register.html">Sign Up</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-menu d-lg-none">
+                            <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="content-wrapper">
+
+            <div class="breadcrumb-wrap bg-f br-1">
+                <div class="container">
+                    <div class="breadcrumb-title">
+                        <h2>About Us</h2>
+                        <ul class="breadcrumb-menu list-style">
+                            <li><a href="index.html">Home </a></li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="partner-wrap ptb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+                            <div class="section-title text-center mb-40">
+                                <h2>Used By 100K+ Businesses Of All Shapes &amp; Sizes</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partner-slider owl-carousel">
+                        <div class="partner-item">
+                            <img src="{% static 'assets/img/partner/partner-1.png'%}" alt="Image">
+                        </div>
+                        <div class="partner-item">
+                            <img src="{% static 'assets/img/partner/partner-2.png'%}" alt="Image">
+                        </div>
+                        <div class="partner-item">
+                            <img src="{% static 'assets/img/partner/partner-3.png'%}" alt="Image">
+                        </div>
+                        <div class="partner-item">
+                            <img src="{% static 'assets/img/partner/partner-4.png'%}" alt="Image">
+                        </div>
+                        <div class="partner-item">
+                            <img src="{% static 'assets/img/partner/partner-5.png'%}" alt="Image">
+                        </div>
+                        <div class="partner-item">
+                            <img src="{% static 'assets/img/partner/partner-6.png'%}" alt="Image">
+                        </div>
+                        <div class="partner-item">
+                            <img src="{% static 'assets/img/partner/partner-7.png'%}" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="about-wrap style1 pb-100">
+                <div class="container">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-6 about-img-wrap">
+                                    <img src="{% static 'assets/img/about/about-shape-4.png'%}" alt="Image"
+                                        class="about-shape-one bounce">
+                                    <div class="about-img">
+                                        <img src="{% static 'assets/img/about/about-img-1.jpg'%}" alt="Image">
+                                    </div>
+                                    <div class="about-img">
+                                        <img src="{% static 'assets/img/about/about-img-2.jpg'%}" alt="Image">
+                                    </div>
+                                </div>
+                                <div class="col-6 about-img-wrap lgm-70">
+                                    <img src="{% static 'assets/img/shape-1.png'%}" alt="Image"
+                                        class="about-shape-two moveHorizontal">
+                                    <div class="about-img">
+                                        <img src="{% static 'assets/img/about/about-img-3.jpg'%}" alt="Image">
+                                    </div>
+                                    <div class="about-img">
+                                        <img src="{% static 'assets/img/about/about-img-4.jpg'%}" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-content">
+                                <div class="content-title style1">
+                                    <span>ABOUT US</span>
+                                    <h2>Transfer &amp; Exchange Your Money Anytime Inthis World</h2>
+                                    <p>Best Strategic planning dolor sit amet consectetur adipiscing elit. Scel erus
+                                        isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar dolor
+                                        strategic planning dolor sit sectetur morethe.</p>
+                                </div>
+                                <div class="feature-item-wrap">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="flaticon-clicking"></i>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h3>Powerful Mobile &amp; Online App</h3>
+                                            <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui
+                                                praesent sapien pellen tesque .</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="flaticon-alarm"></i>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h3>Brings More Transperency &amp; Speed</h3>
+                                            <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui
+                                                praesent sapien pellen tesque.</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="flaticon-setting"></i>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h3>Special For Multiple User Capabilities</h3>
+                                            <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui
+                                                praesent sapien pellen tesque.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="about.html" class="btn style1">READ MORE<i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="feature-wrap style1 pt-100 pb-75 bg-whisper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+                            <div class="section-title style1 text-center mb-40">
+                                <span>MOST POPULAR CURRENCY TOOLS</span>
+                                <h2>Set Up &amp; Exchange Money From Your Cards In A Minute</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class=" col-xxl-3 col-xl-4 col-lg-6 col-md-6">
+                            <div class="feature-card style1">
+                                <div class="feature-icon">
+                                    <i class="flaticon-hand"></i>
+                                </div>
+                                <h3><a href="send-money.html">Money Transfer</a></h3>
+                                <p>Lorem ipsum dolor sit amet ametus conso tetur ading elitor fugit piatur iusto provid.
+                                </p>
+                                <a href="send-money.html" class="link style1">Send Money <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                        <div class=" col-xxl-3 col-xl-4 col-lg-6 col-md-6">
+                            <div class="feature-card style1">
+                                <div class="feature-icon">
+                                    <i class="flaticon-pie-chart"></i>
+                                </div>
+                                <h3><a href="chart.html">Curreny Charts</a></h3>
+                                <p>Lorem ipsum dolor sit amet ametus conso tetur ading elitor fugit piatur iusto provid.
+                                </p>
+                                <a href="chart.html" class="link style1">View Charts<i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                        <div class=" col-xxl-3 col-xl-4 col-lg-6 col-md-6">
+                            <div class="feature-card style1">
+                                <div class="feature-icon">
+                                    <i class="flaticon-notification"></i>
+                                </div>
+                                <h3><a href="alerts.html">Rate Alerts</a></h3>
+                                <p>Lorem ipsum dolor sit amet ametus conso tetur ading elitor fugit piatur iusto provid.
+                                </p>
+                                <a href="alerts.html" class="link style1">Create Alerts<i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                        <div class=" col-xxl-3 col-xl-4 col-lg-6 col-md-6">
+                            <div class="feature-card style1">
+                                <div class="feature-icon">
+                                    <i class="flaticon-user-3"></i>
+                                </div>
+                                <h3><a href="register.html">Create Account</a></h3>
+                                <p>Lorem ipsum dolor sit amet ametus conso tetur ading elitor fugit piatur iusto provid.
+                                </p>
+                                <a href="register.html" class="link style1">Get Started <i
+                                        class="ri-arrow-right-s-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="wh-wrap style3 ptb-100">
+                <div class="container">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-lg-1 order-md-2 order-2">
+                            <div class="wh-content">
+                                <div class="content-title style1">
+                                    <span>WHY CHOOSE US</span>
+                                    <h2>We Provide Currency Exchange Services World Wide</h2>
+                                    <p>Best Strategic planning dolor sit amet consectetur adipiscing elit. Scel erus
+                                        isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar dolor
+                                        strategic planning dolor sit sectetur morethe.</p>
+                                </div>
+                                <div class="feature-item-wrap">
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="flaticon-tick"></i>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h3>Historical Currency Rates</h3>
+                                            <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui
+                                                praesent sapien pellen tesque .</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="flaticon-tick"></i>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h3>Travel Expense Calculator</h3>
+                                            <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui
+                                                praesent sapien pellen tesque.</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-icon">
+                                            <i class="flaticon-tick"></i>
+                                        </div>
+                                        <div class="feature-text">
+                                            <h3>Currency Email Updates</h3>
+                                            <p>Vestibulum ac diam sit amet quam vehicula elemen tum sed sit amet dui
+                                                praesent sapien pellen tesque.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-2 order-md-1 order-1">
+                            <div class="wh-img-wrap">
+                                <img src="{% static 'assets/img/shape-6.png'%}" alt="Image" class="wh-shape-one animationFramesTwo">
+                                <img src="{% static 'assets/img/why-choose-us/wh-img-7.jpg'%}" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="counter-wrap style1 pb-75">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-2">
+                            <div class="section-title style1 text-center mb-40">
+                                <span>НЕСКОЛЬКО ИНТЕРЕСНЫХ ФАКТОВ</span>
+                                <h2>Мы всегда стараемся понять ожидания клиентов</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="counter-card-wrap">
+                        <div class="counter-card">
+                            <div class="counter-text">
+                                <h2 class="counter-num">
+                                    <span class="odometer" data-count="170"></span>
+                                    <span class="target">+</span>
+                                </h2>
+                                <p>Скачиваний</p>
+                            </div>
+                        </div>
+                        <div class="counter-card">
+                            <div class="counter-text">
+                                <h2 class="counter-num">
+                                    <span class="odometer" data-count="10"></span>
+                                    <span class="target">+</span>
+                                </h2>
+                                <p>Обратная связь</p>
+                            </div>
+                        </div>
+                        <div class="counter-card">
+                            <div class="counter-text">
+                                <h2 class="counter-num">
+                                    <span class="odometer" data-count="800"></span>
+                                    <span class="target">+</span>
+                                </h2>
+                                <p>Рабочие</p>
+                            </div>
+                        </div>
+                        <div class="counter-card">
+                            <div class="counter-text">
+                                <h2 class="counter-num">
+                                    <span class="odometer" data-count="20"></span>
+                                    <span class="target">+</span>
+                                </h2>
+                                <p>лет опыта</p>
+                            </div>
+                        </div>
+                        <div class="counter-card">
+                            <div class="counter-text">
+                                <h2 class="counter-num">
+                                    <span class="odometer" data-count="30"></span>
+                                    <span class="target">+</span>
+                                </h2>
+                                <p>Авторы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="feature-wrap style1 ptb-100 bg-whisper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                            <div class="section-title style1 text-center mb-40">
+                                <span>YOUR BENIFITS</span>
+                                <h2>The Most Trusted Currency Exchange Is Here For Giving Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-slider-one owl-carousel">
+                        <div class="feature-card style6">
+                            <div class="feature-icon">
+                                <i class="flaticon-planet-earth"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h3><a href="#">Global Coverage</a></h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of home page.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card style6">
+                            <div class="feature-icon">
+                                <i class="flaticon-money-bag-1"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h3><a href="#">Easy Transfer Method</a></h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of home page.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card style6">
+                            <div class="feature-icon">
+                                <i class="flaticon-notification"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h3><a href="#">Global 24/7 Support</a></h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of home page.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card style6">
+                            <div class="feature-icon">
+                                <i class="flaticon-money-1"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h3><a href="#">Lowest Fee</a></h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of home page.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card style6">
+                            <div class="feature-icon">
+                                <i class="flaticon-automation"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h3><a href="#">Instant Processing</a></h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of home page.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card style6">
+                            <div class="feature-icon">
+                                <i class="flaticon-shield"></i>
+                            </div>
+                            <div class="feature-info">
+                                <h3><a href="#">Bank Lavel Security</a></h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of home page.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="app-wrap style2 ptb-100">
+                <div class="container">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="app-img-wrap">
+                                <img src="{% static 'assets/img/shape-5.png'%}" alt="Image" class="app-shape-one bounce">
+                                <img src="{% static 'assets/img/app-screen.png'%}" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="app-content">
+                                <div class="content-title style1">
+                                    <span>OUR APP</span>
+                                    <h2>Let's Answer Some Of Your Questions Or Download Our App</h2>
+                                    <p>In our dolore with people who are important to you, conversations that bring you
+                                        to closer to each other and those who enjoy our dishes. Quisque pretium dolor
+                                        turpis, quis blandit turpis semper ut. Nam malesuada eros nec luctus laoreet.
+                                        Fusce sodales consequat velit eget dictum. Integer ornare magna.</p>
+                                </div>
+                                <h5>Over 70 million Downloads Worldwide</h5>
+                                <div class="app-btn-wrap">
+                                    <a href="index.html">
+                                        <img src="{% static 'assets/img/about/play-store.png'%}" alt="Image">
+                                    </a><a href="index.html">
+                                        <img src="{% static 'assets/img/about/app-store.png'%}" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="testimonial-wrap pb-100">
+                <div class="container">
+                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+                        <div class="section-title style1 text-center mb-40">
+                            <span>OUR REVIEWS</span>
+                            <h2>More Than 20,000+ Happy Customers Trust Our Services</h2>
+                        </div>
+                    </div>
+                    <div class="testimonial-slider-two owl-carousel">
+                        <div class="testimonial-card style3">
+                            <div class="client-info-area">
+                                <div class="client-info-wrap">
+                                    <div class="client-img">
+                                        <img src="{% static 'assets/img/testimonials/client-3.jpg'%}" alt="Image">
+                                    </div>
+                                    <div class="client-info">
+                                        <h3>Jim Morison</h3>
+                                        <span>Director, BAT</span>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="flaticon-quotation-mark"></i>
+                                </div>
+                            </div>
+                            <p class="client-quote">Best Strategic planning dolor sit amet consectetur adicing elit.
+                                Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best
+                                strategic planning dolor sit sectetur.</p>
+                        </div>
+                        <div class="testimonial-card style3">
+                            <div class="client-info-area">
+                                <div class="client-info-wrap">
+                                    <div class="client-img">
+                                        <img src="{% static 'assets/img/testimonials/client-4.jpg'%}" alt="Image">
+                                    </div>
+                                    <div class="client-info">
+                                        <h3>Alex Cruis</h3>
+                                        <span>CEO, IBAC</span>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="flaticon-quotation-mark"></i>
+                                </div>
+                            </div>
+                            <p class="client-quote">Best Strategic planning dolor sit amet consectetur adicing elit.
+                                Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best
+                                strategic planning dolor sit sectetur.</p>
+                        </div>
+                        <div class="testimonial-card style3">
+                            <div class="client-info-area">
+                                <div class="client-info-wrap">
+                                    <div class="client-img">
+                                        <img src="{% static 'assets/img/testimonials/client-5.jpg'%}" alt="Image">
+                                    </div>
+                                    <div class="client-info">
+                                        <h3>Tom Haris</h3>
+                                        <span>Engineer, Olleo</span>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="flaticon-quotation-mark"></i>
+                                </div>
+                            </div>
+                            <p class="client-quote">Best Strategic planning dolor sit amet consectetur adicing elit.
+                                Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best
+                                strategic planning dolor sit sectetur.</p>
+                        </div>
+                        <div class="testimonial-card style3">
+                            <div class="client-info-area">
+                                <div class="client-info-wrap">
+                                    <div class="client-img">
+                                        <img src="{% static 'assets/img/testimonials/client-1.jpg'%}" alt="Image">
+                                    </div>
+                                    <div class="client-info">
+                                        <h3>Harry Jackson</h3>
+                                        <span>Enterpreneur</span>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="flaticon-quotation-mark"></i>
+                                </div>
+                            </div>
+                            <p class="client-quote">Best Strategic planning dolor sit amet consectetur adicing elit.
+                                Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best
+                                strategic planning dolor sit sectetur.</p>
+                        </div>
+                        <div class="testimonial-card style3">
+                            <div class="client-info-area">
+                                <div class="client-info-wrap">
+                                    <div class="client-img">
+                                        <img src="{% static 'assets/img/testimonials/client-2.jpg'%}" alt="Image">
+                                    </div>
+                                    <div class="client-info">
+                                        <h3>Chris Haris</h3>
+                                        <span>MD, ITec</span>
+                                    </div>
+                                </div>
+                                <div class="quote-icon">
+                                    <i class="flaticon-quotation-mark"></i>
+                                </div>
+                            </div>
+                            <p class="client-quote">Best Strategic planning dolor sit amet consectetur adicing elit.
+                                Scel erus isque ametus odio velit auctor nam elit nulla eget sodales dui pulvinar. Best
+                                strategic planning dolor sit sectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+{% include 'include/footer.html' %}
+
+{%endblock%}
+        

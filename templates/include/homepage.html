@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/remixicon.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/odometer.min.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/fancybox.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/aos.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/dark-theme.css'%}">
+    <title></title>
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png'%}">
+</head>
+<body>
+    <div class="preloader js-preloader">
+        <div class="loader loader-inner-1">
+            <div class="loader loader-inner-2">
+                <div class="loader loader-inner-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="switch-theme-mode">
+        <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+
+    <div class="page-wrapper">
+    {%block content%}
+    {%endblock%}
+    <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'assets/js/form-validator.min.js'%}"></script>
+    <script src="{% static 'assets/js/contact-form-script.js'%}"></script>
+    <script src="{% static 'assets/js/aos.js'%}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'assets/js/odometer.min.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.countdown.min.js'%}"></script>
+    <script src="{% static 'assets/js/fancybox.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js'%}"></script>
+    <script src="{% static 'assets/js/tweenmax.min.js'%}"></script>
+    <script src="{% static 'assets/js/main.js'%}"></script>
+</body>
+
+</html>
